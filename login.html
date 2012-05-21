@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>meinFHDmobile PROTOTYPE</title>
+		<meta name="description" content="meinFHD - Fachhochschule D&uuml;sseldorf">
+		<meta name="author" content="Johannes Hagenberg">
+		
+		<!--mobile meta tags-->
+		<meta name="HandheldFriendly" content="true" />
+		<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+	
+		<!--apple meta tags-->
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 
+		
+		<!-- Styles -->		
+		<link rel="stylesheet/less" type="text/css" href="bootstrap/less/bootstrap.less">
+		<style type="text/css">
+			body {
+				padding-top: 80px;
+				padding-bottom: 40px;
+			}
+		</style>
+		<link rel="less/stylesheet" type="text/css" href="bootstrap/less/responsive.less" />
+			
+	</head> <!-- /head -->
+	<body>
+		
+		<!--MODAL OVERLAY-->
+		<div class="modal fade" id="accountdata">
+			<div class="modal-header">
+				
+				<h3>Zugangsdaten erhalten</h3>
+			</div>
+			<div class="modal-body">
+				<label for="email">E-mail-Adresse</label>
+				<input name="email" type="text" />
+			</div>
+			<div class="modal-footer">
+				<a href="#" data-dismiss="modal" class="btn btn-large">schließen</a>
+				<a href="#" class="btn btn-inverse btn-large">absenden</a>
+			</div>
+		</div><!--MODAL OVERLAY ends here-->
+		
+		<!--pseudonav-->
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+			</div>
+		</div><!--pseudonav ends here-->
+		
+		<!-- CONTENT -->
+	<div class="container container-fluid">
+		<div class="row">
+			<div class="span8">
+				<div class="well well-small clearfix">
+			
+					<h6>Login</h6>
+			
+					<!--Titel-->
+	    			<h1 class="maintitle">meinFHD<span>mobile</span></h1>
+					<hr />
+					
+					<!--Loginform-->
+					<form class="form-inline">
+						
+						<input name="user" type="text" class="span2" placeholder="Benutzername" /><br />
+		
+						<input name="pw" type="password" class="span2" placeholder="Passwort" /><br />
+						<hr class="hidden-phone" />				
+						
+						<div class="well well-small clearfix">	
+							
+							<!--stay logged in-->													
+							<label class="checkbox">
+								<input name="staylogged" type="checkbox" />
+								&nbsp;eingeloggt bleiben
+							</label>
+							
+							<!--Login btn-->									
+							<a href="dashboard" class="btn btn-inverse pull-right">
+								<i class="icon-arrow-right icon-white"></i>
+								 anmelden
+							</a>
+						</div>
+					</form>
+		    		    	   								  
+				</div>
+ 	    		
+			</div><!-- /.span8-->
+			
+			<!--DESKTOP AND TABLET ONLY-->
+			<div class="span4">
+			
+				<div class="well well-small clearfix">
+					<!--Modal trigger Zugang-->
+					<a  class="btn pull-left" data-toggle="modal" href="#accountdata">neuer Zugang</a>
+				
+					<!--Modal trigger pw-->
+					<a class="btn pull-right" data-toggle="modal" href="#accountdata">Passwort vergessen</a>				
+				</div>
+			
+			</div><!-- /.span4 -->						
+			
+		</div><!--first row ends here-->
+	</div>
+		
+		
+		
+		
+		<!-- Scripts -->
+		<script src="bootstrap/js/jquery.js" type="text/javascript"></script>		
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+		
+		<!--LESS compiler-->
+		<script src="bootstrap/js/less.js" type="text/javascript"></script>
+		
+		<!--CUSTOM-->
+		<script type="text/javascript">
+		
+		</script>
+		
+	</body> <!-- /body -->
+	
+</html> <!-- /html -->
