@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>meinFHDmobile PROTOTYPE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="HandheldFriendly" content="true" />
+		
+		<!--apple meta tags-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<!-- Styles -->
+		<link rel="stylesheet/less" type="text/css" href="resources/bootstrap/less/bootstrap.less">
+		<link rel="stylesheet/less" type="text/css" href="resources/bootstrap/less/responsive.less">
+		<link rel="stylesheet/less" type="text/css" href="less/meinfhd.less">
+		<link rel="stylesheet/less" type="text/css" href="less/meinfhd-responsive.less">
+		
+		<!--LESS compiler-->
+		<script src="resources/lessjs/dist/less-1.3.0.min.js" type="text/javascript"></script>
+
+		<style type="text/css">
+
+		body {
+		    background: rgba(128, 128, 128, 0.4);
+		    color: #444;
+		    position: relative;
+		    z-index: 1;
+		}
+
+		.box-shadow {
+		    -webkit-box-shadow: 0px 1px 4px rgba(100, 100, 100, 1);
+		     -moz-box-shadow: 0px 1px 4px rgba(100, 100, 100, 1);
+		          box-shadow: 0px 1px 4px rgba(100, 100, 100, 1);
+		}
+		.meinFHD {
+		    position: absolute;
+		    top: -70px;
+		    color: #FFF;
+		    font-weight: bold;
+		    font-size: 30pt;
+		    line-height: 130%;
+		    display: block;
+		    text-align: left;
+		    background: rgba(255, 91, 91, 1);
+		    width:100%;
+		    z-index: 10;
+		    text-indent: 5px;
+		}
+
+		.demo {
+		    margin: 70px auto 20px auto;
+		    background: #FFF;
+		    width: 300px;
+		    padding: 15px;
+		    position: relative;
+		    z-index: 20;
+		}
+
+		.demo .span4 {
+		    float: none;
+		    margin-left: 0;
+		}
+		.span4{
+			width:300px;
+		}
+
+		.demo .well {
+		    position: relative;
+		}
+
+		.demo h2 {
+		    color: #FFF;
+		}
+
+		.navbar .btn-navbar {
+		    display: inline-block;
+		}
+
+		.navbar-inner,
+		.navbar .container {
+		    text-align: center;
+		    position: relative;
+		    padding: 0;
+		}
+
+		.accordion-heading,
+		.accordion-toggle {
+		    background: rgba(255, 0, 0, 0.4);
+		    position: relative;
+		}
+
+		.accordion-heading a,
+		.accordion-toggle a{
+		    color: rgba(255, 255, 255, 1);
+		    text-decoration: none;
+		}
+
+		.icon {
+		    position: absolute;
+		    top: 10px;
+		    right: 10px;
+		}
+
+		.gradient-fhd-red {
+		    background-color: #ff4c4c;
+		    *background-color: #ff5b5b;
+		    background-image: -ms-linear-gradient(top, #ff4c4c, #ff5b5b);
+		    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff4c4c), to(#ff5b5b));
+		    background-image: -webkit-linear-gradient(top, #ff4c4c, #ff5b5b);
+		    background-image: -o-linear-gradient(top, #ff4c4c, #ff5b5b);
+		    background-image: -moz-linear-gradient(top, #ff4c4c, #ff5b5b);
+		    background-image: linear-gradient(top, #ff4c4c, #ff5b5b);
+		    background-repeat: repeat-x;
+		    border-color: #f89406 #f89406 #ad6704;
+		    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+		    filter: progid:dximagetransform.microsoft.gradient(startColorstr='##ff4c4c', endColorstr='#ff5b5b', GradientType=0);
+		    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+		}
+
+		.btn.gradient-fhd-red:hover {
+		    background: rgba(255, 0, 0, 0.8);
+		}
+
+		</style>
+	</head> <!-- /head -->
+	<body>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<span class="meinFHD">meinFHD</span>
+<div class="demo box-shadow">
+    <div class="span4">
+        <div class="navbar">
+            <div class="navbar-inner gradient-fhd-red">
+                <div class="container">
+                    <a href="#back" class="btn pull-left">
+                        <i class="icon-home"></i>
+                    </a>
+                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                    <a class="btn btn-navbar pull-right">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>                    
+                    <h2>FAQ</h2>
+                </div>
+            </div>
+        </div>
+        <div id="accordion-faq" class="accordion">
+            <div class="accordion-group">
+                <div  class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseOne">
+                        Warum soll ich mein Studium jetzt schon planen?
+                        <i class="icon icon-plus-sign icon-white pull-right" ></i>
+                    </a>
+                </div>
+                 <div id="collapseOne" class="accordion-body  collapse" style="height: 0px; ">
+                    <div class="accordion-inner">Damit Du direkt einen guten Überblick über die Kurse und Prüfungen, die auf Dich zukommen, hast.</div>
+                </div>
+            </div> <!-- .accordion-group ende -->
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseTwo">
+                        Wie kann ich mein Studium jetzt schon planen?
+                        <i class="icon icon-plus-sign icon-white pull-right" ></i>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">Indem Du einen Semesterplan anlegst und ihn individuell einrichtest. Das kannst du über den Hauptmenüpunkt "Studium planen" tun.</div>
+                </div>
+            </div> <!-- .accordion-group ende -->
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseThree">
+                        Wie kann ich mich für ein Praktikum anmelden?
+                        <i class="icon icon-plus-sign icon-white pull-right" ></i>
+                    </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">Indem du im "Stundenplan" auf den Link "anmelden" der jeweiligen Praktikumsgruppe klickst und anschließend Deine nderungen speicherst. Voraussetzung dafür ist aber, dass Du vorher einen Studiengang und Deinen Studienbeginn in Deinen persönlichen Daten angegeben hast.</div>
+                </div>
+            </div> <!-- .accordion-group ende -->
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseFour">
+                        Für welche Gruppe soll ich mich entscheiden?
+                        <i class="icon icon-plus-sign icon-white pull-right" ></i>
+                    </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">Diese Entscheidung liegt bei Dir. Aber Du solltest Deine Gruppen so planene, dass sie sich nicht überkreuzen und Du an allen notwendigen Gruppen teilnehmen kannst.</div>
+                </div>
+            </div> <!-- .accordion-group ende -->
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-faq" href="#collapseFive">
+                        Woran erkenne ich, wo ich mich anmelden muss?
+                        <i class="icon icon-plus-sign icon-white pull-right" ></i>
+                    </a>
+                </div>
+                <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">Für Praktika musst Du Dich immer anmelden. Übungen sind optional. An dem An-/Abmelde-Link jeder Veranstaltung kannst Du sehen, ob du bereits für diese Veranstaltung angemeldet bist.</div>
+                </div>
+            </div> <!-- .accordion-group ende -->
+        </div> <!-- #accordion-faq ende -->
+    </div> <!-- .span4 ende -->
+</div> <!-- .demo ende -->
+		
+		<script src="resources/jquery/jquery.min.js" type="text/javascript"></script>
+		<script src="resources/bootstrap/js/bootstrap-collapse.js" type="text/javascript"></script>
+		
+		<script src="resources/js/faq.js" type="text/javascript"></script>
+	</body> <!-- /body -->
+</html> <!-- /html -->
