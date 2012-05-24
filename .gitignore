@@ -33,3 +33,16 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
+# sublimetext 2 files #
+#######################
+*.pyc
+*.cache
+*.sublime-project
+
+# sublimetext 2 hg-user files #
+###############################
+*.hgignore
+*.hgtags
+*.pyc
+*.cache
+*.sublime-project
