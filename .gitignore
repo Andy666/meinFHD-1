@@ -46,3 +46,7 @@ Thumbs.db
 *.pyc
 *.cache
 *.sublime-project
+
+# custom environmental files #
+##############################
+local_*.php

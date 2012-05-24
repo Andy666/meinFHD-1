@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'db10648517-mfhd';
-$db['default']['password'] = 'Isalesop37';
-$db['default']['database'] = 'db10648517-meinfhd';
+$db['default']['username'] = 'meinFHDuser';
+$db['default']['password'] = 'meinFHDpassword';
+$db['default']['database'] = 'meinFHDdatabase';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -64,5 +64,7 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+// include local database settings in development environments
+@include_once($_SERVER['DOCUMENT_ROOT'] . '/meinFHD/Environment/local_database.php');
 /* End of file database.php */
 /* Location: ./application/config/database.php */
