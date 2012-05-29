@@ -49,4 +49,4 @@ Thumbs.db
 
 # custom environmental files #
 ##############################
-local_*.php
+Environment/
