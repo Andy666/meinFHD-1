@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+  @author Nils Röhrig
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>meinFHDmobile PROTOTYPE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Nils Röhrig" />
+    <meta name="HandheldFriendly" content="true" />
+  
+    <!--apple meta tags-->
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    
+    <!-- Styles -->
+    <link rel="stylesheet/less" type="text/css" href="bootstrap/less/bootstrap.less" />
+    <link rel="less/stylesheet" type="text/css" href="bootstrap/less/responsive.less" />
+
+    <style type="text/css">
+      body {
+        padding-top: 80px;
+        padding-bottom: 40px;
+      }
+
+      fieldset legend {
+        margin-bottom: 0;
+        border: 0;
+      }
+
+      i.icon-hdd {
+        background-position: 0px -144px;
+      }
+
+    </style>
+        
+    <!--LESS compiler-->
+    <script src="bootstrap/js/less.js" type="text/javascript"></script>
+    
+  </head> <!-- /head -->
+  <body>    
+      <!-- Dropdownmenu --> 
+    <div class="navbar navbar-fixed-top clearfix">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-parent="#user-details" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">meinFHD<span>mobile</span></a>
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="studienplanung.html">Studienplanung</a></li>
+              <li class="active"><a href="#">Persönliche Daten</a></li>
+              <li><a href="#contact">Hilfe</a></li>                             
+              <li><a href="#contact">Impressum</a></li>                             
+            </ul>
+          </div><!--/.nav-collapse -->
+          
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h6 class="row-fluid">Persönliche Einstellungen</h6>
+      <form id="user-details">
+        <div class="row-fluid">
+          <fieldset class="span4" id="login-details">
+            <legend data-toggle="collapse" data-parent="#user-details" data-target="#login-details .form-elements">Login-Details</legend>
+            <div class="collapse form-elements well well-small">
+                <label for="login-name">Loginname</label>
+                <input type="text" id="login-name" name="login-name" class="span" placeholder="Loginname" />
+                <label for="password">Passwort</label>
+                <input type="password" id="password" name="password" class="span" placeholder="Passwort" />
+                <label for="confirm-password">Passwort bestätigen</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="span" placeholder="Passwort bestätigen" />
+            </div>
+          </fieldset>
+          <fieldset class="span4" id="contact-details">
+            <div class="well well-small">
+              <legend data-toggle="collapse" data-parent="#user-details" data-target="#contact-details .form-elements">Kontaktinformationen</legend>
+              <div class="collapse form-elements">
+                <label for="first-name">Vorname</label>
+                <input type="text" id="first-name" name="first-name" class="span" placeholder="Vorname" />
+                <label for="last-name">Nachname</label>
+                <input type="text" id="last-name" name="last-name" class="span" placeholder="Nachname" />
+                <label for="email">E-Mail-Adresse</label>
+                <input type="email" id="email" name="email" class="span" placeholder="E-Mail-Adresse" />
+                <label for="private-correspondence" class="checkbox"><input type="checkbox" id="private-correspondence" name="private-correspondence" /> Dozenten dürfen mich unter dieser Adresse auch persönlich erreichen.</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="span4" id="study-course-details">
+            <div class="well well-small">
+              <legend data-toggle="collapse" data-parent="#user-details" data-target="#study-course-details .form-elements">Studiengang</legend>
+              <div class="collapse form-elements">
+                <label for="study-course">Studiengang</label>
+                <select class="span" name="study-course" id="study-course">
+                  <option value="0">-- Bitte Wählen --</option>
+                  <option value="1">B.Sc. Medieninformatik (PO2008)</option>
+                  <option value="2">B.Sc. Medieninformatik (PO2010)</option>
+                  <option value="3">M.Sc. Medieninformatik (PO2010)</option>
+                  <option value="4">B.Sc. Medien und angewandte IT (PO2005)</option>
+                  <option value="5">M.Sc. Virtuelle Realität (PO2006)</option>
+                  <option value="6">B.Eng. Medientechnik (PO2005)</option>
+                  <option value="7">B.Eng. Medientechnik (PO2008)</option>
+                  <option value="8">B.Eng Medientechnik (PO2010)</option>
+                  <option value="9">B.Mus.Eng. Ton u. Bild (PO2008)</option>
+                  <option value="10">B.Mus.Eng. Ton u. Bild (PO2010)</option>
+                </select>
+                <label for="year">Startjahr</label>
+                <input type="text" id="year" name="year" class="span" placeholder="Startjahr" />
+                <label for="start-term-winter" class="radio"><input type="radio" id="start-term-winter" name="start-term" value="1" /> Wintersemester</label>
+                <label for="start-term-summer" class="radio"><input type="radio" id="start-term-summer" name="start-term" value="2" checked="checked" /> Sommersemester</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="row-fluid">
+          <div class="alert alert-info clearfix">
+            <button type="submit" class="btn btn-large" value="save"><i class="icon-hdd"></i> Speichern</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Scripts -->
+    <script src="bootstrap/js/jquery.js" type="text/javascript"></script>   
+    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/modernizr-latest.js" txpe="text-javascript"></script>
+    <script src="js/custom-user-profile.js"></script>
+    </body> 
+  <!-- /body -->
+</html> <!-- /html -->

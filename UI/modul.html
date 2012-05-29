@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>meinFHDmobile PROTOTYPE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="HandheldFriendly" content="true" />
+	
+		<!--apple meta tags-->
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 
+		
+		<!-- Styles -->		
+		<link rel="stylesheet/less" type="text/css" href="bootstrap/less/bootstrap.less">
+		<style type="text/css">
+			body {
+				padding-top: 80px;
+				padding-bottom: 40px;
+			}
+		</style>
+		<link rel="less/stylesheet" type="text/css" href="bootstrap/less/responsive.less" />
+				
+		<!--LESS compiler-->
+		<script src="bootstrap/js/less.js" type="text/javascript"></script>
+		
+	</head><!-- /head -->
+	<body>	
+	<!--NAVIGATION-->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">meinFHD<span>mobile</span></a>
+				
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li><a href="index.html">Dashboard</a></li>
+						<li class="active"><a href="#">Studienplanung</a></li>
+						<li><a href="#contact">Persönlich Daten</a></li>
+						<li><a href="#contact">Hilfe</a></li>              	              
+						<li><a href="#contact">Impressum</a></li>
+						
+						<!--LOGOUT-->
+						<li><a href="#contact">Logout</a></li>						              	              
+					</ul>
+				</div><!--/.nav-collapse -->
+				
+			</div>
+		</div>
+	</div><!--NAVIGATION ENDE-->
+	
+	
+	<!- ------------------------------------------------ -->
+	<!-- MODULÜBERSICHT -------------------------------- -->
+	<!- ------------------------------------------------ -->
+	
+	<!-- CONTENT -->
+	<div class="container container-fluid">
+		<div class="row">
+			<div class="span8">
+				<div class="well well-small clearfix">
+			
+					<h6>Modulübersicht</h6>
+			
+					<!--Titel-->
+	    			<h1>OOP1</h1>
+	    			<h4>Prof. Dr. Markus Dahm</h4>
+					<hr />
+					<!--Optionen-->
+		    		<div class="alert alert-info clearfix">
+   		    			<a href="#" class="btn btn-large pull-left">
+   		    				<i class="icon-pencil"></i>
+   		    				 Notizen
+   		    			</a>
+		    			<a href="dozent" class="btn btn-large btn-primary pull-right">
+		    				<i class="icon-arrow-right icon-white"></i>
+		    				 Dozent
+		    			</a>
+		    		</div>
+		    						    		    	   
+		    		<!--Bar-Widget-->
+		    		<h4>Anwesenheit dieses Semester</h4>
+		    		<div class="progress progress-striped">
+  						<div class="bar" style="width: 45%;"></div>
+					</div>									  
+				</div>
+				
+			</div><!-- /.span8-->
+			
+			<!--DESKTOP AND TABLET ONLY-->
+			<div class="span4">
+			
+				<div class="well well-small hidden-phone">
+					<h2>Widgets <small>Dekstop & Tablet only</small></h2>
+					<hr class="hidden-phone" />
+					<h4>widget content</h4>
+					<div class="progress progress-striped active">
+					  <div class="bar" style="width: 40%;"></div>
+					</div>
+					<hr />
+					<h4>widget content</h4>
+					<div class="progress progress-striped progress-warning active">
+					  <div class="bar" style="width: 40%;"></div>
+					</div>
+				</div>
+			
+			</div><!-- /.span4 -->						
+			
+		</div><!--first row ends here-->
+		
+		<div class="row">
+			
+			<div class="span4">
+				
+				<!--Vorlesung-->
+				<div class="well well-small">
+					<h2>Vorlesung&nbsp;<small>Montags</small></h2>	
+					<h3>H 1.22 &frasl; 8:00 - 9:45</h3>
+				</div>
+
+			</div>
+			
+			<div class="span4">
+			
+				<!--Praktikum-->
+				<div class="well well-small">
+					<h2>Praktika&nbsp;<small>Freitags</small></h2>
+					<h3>H 1.22</h3>
+					<hr class="hidden-phone" />
+					<table class="table centered"> 
+						<thead>
+							<tr>
+								<td width="25%">Gruppe</td>
+								<td>Uhrzeit</td>
+							</tr>
+						</thead>
+						<tbody>
+							<!--
+							<tr>
+								<td>A</td>
+								<td>8:00 - 9:45</td>
+								<td>
+									<a href="#" class="btn btn-large pull-right">
+										<i class="icon-ok"></i>
+									</a>									
+								</td>
+							</tr>-->
+							<!-vom User belegter Termin--->
+							<tr class="alert alert-success">
+								<td>B</td>
+								<td>10:00 - 11:45</td>
+								<td>
+									<a href="#" class="btn btn-large btn-danger pull-right">
+										<i class="icon-remove icon-white"></i>
+									</a>
+								</td>
+							</tr><!--belegeter Termin Ende-->
+							<!--
+							<tr>
+								<td>C</td>
+								<td>12:00 - 13:45</td>
+								<td>
+									<a href="#" class="btn btn-large pull-right">
+										<i class="icon-ok"></i>
+									</a>
+								</td>								
+							</tr>-->
+						</tbody>
+					</table>
+				</div>
+
+			</div><!-- /.span4-->			
+			<div class="span4">
+				
+				<!--Tabelle für zusätzliche Termine-->
+				<div class="well well-small">
+					<h2>Übungen&nbsp;<small>Mittwochs</small></h2>
+					<h3>H 1.22</h3>	
+					<hr class="hidden-phone" />				
+					<table class="table centered"> 
+						<thead>
+							<tr>
+								<td width="25%">Gruppe</td>
+								<td>Uhrzeit</td>
+								<td></td>
+							</tr>
+						</thead>
+						<tbody>				
+							<tr>
+								<td>1</td>
+								<td>14:00 - 15:45</td>
+								<td>
+									<a href="#" class="btn btn-large pull-right">
+										<i class="icon-ok"></i>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>16:00 - 17:45</td>
+								<td>
+									<a href="#" class="btn btn-large pull-right">
+										<i class="icon-ok"></i>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div><!-- /.span4-->
+		</div><!-- /.row-->
+		
+		<div class="row">
+			
+			<!--optionbox at the end of page-->
+			<div class="span12">
+				<div class="alert alert-info clearfix">
+					<a href="stundenplan_simple" class="btn btn-large btn-primary" href="#">
+						<i class="icon-arrow-left icon-white"></i>
+						 Stundenplan
+					</a>
+				</div>
+			</div><!-- /.span12-->
+			
+		</div><!-- /.row-->
+		
+   	</div><!-- /.fluid container-->
+   	
+	<!-- CONTENT ENDE-->
+	
+	<!-- Scripts -->
+	<script src="bootstrap/js/jquery.js" type="text/javascript"></script>		
+	<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	
+	</body> <!-- /body -->
+</html> <!-- /html -->
