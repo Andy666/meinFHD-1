@@ -1,4 +1,4 @@
-# Compiled source #
+﻿# Compiled source #
 ###################
 *.com
 *.class
@@ -38,6 +38,7 @@ Thumbs.db
 *.pyc
 *.cache
 *.sublime-project
+*.sublime-workspace
 
 # sublimetext 2 hg-user files #
 ###############################
@@ -46,6 +47,10 @@ Thumbs.db
 *.pyc
 *.cache
 *.sublime-project
+
+# st2 sftp plugin conf #
+########################
+sftp-config.json
 
 # custom environmental files #
 ##############################
